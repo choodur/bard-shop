@@ -10,9 +10,9 @@ function App() {
   return (
     <CartProvider>
       <Router>
-        <div className="min-h-screen bg-gray-50">
+        <div className="min-h-screen w-full flex flex-col bg-gray-50">
           <Navbar />
-          <main className="container mx-auto px-4 py-8">
+          <main className="flex-1 w-full px-4 py-8">
             <Routes>
               <Route path="/" element={<ProductList />} />
               <Route path="/product/:id" element={<ProductDetails />} />
